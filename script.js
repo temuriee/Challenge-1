@@ -4,9 +4,6 @@
 
 let day = "pizza";
 
-let testScore = 90;
-let letterGrade;
-
 // switch statements აქვს ორი ფრჩხილი პირველ ფრჩხილში იწერება variable ან value ხოლო მეორე ფრჩხილში უკვე იწერება case ები
 
 switch (day) {
@@ -45,21 +42,24 @@ switch (day) {
     console.log(`${day} is not a day`);
 }
 
+let testScore = 95;
+let letterGrade;
+
 switch (true) {
   case testScore >= 95:
     letterGrade = "A+";
     break;
   case testScore >= 80:
-    letterGrade = "B";
+    letterGrade = "A";
     break;
   case testScore >= 70:
-    letterGrade = "C";
+    letterGrade = "B";
     break;
   case testScore >= 60:
-    letterGrade = "D+";
+    letterGrade = "C";
     break;
   case testScore >= 50:
-    letterGrade = "D-";
+    letterGrade = "D";
     break;
   case testScore < 49:
     letterGrade = "F";
@@ -67,3 +67,4 @@ switch (true) {
   default:
     console.log(`${testScore} is Not A Number`);
 }
+console.log(letterGrade);
